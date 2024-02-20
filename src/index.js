@@ -4,16 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom' ;
-import { ThemeProvider } from './Context/Theme';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeProvider value={{themeMode,darkTheme,lightTheme}}>
+   
     <BrowserRouter>
     <App />
     </BrowserRouter>
-    </ThemeProvider>
+   
   </React.StrictMode>
 );
 
